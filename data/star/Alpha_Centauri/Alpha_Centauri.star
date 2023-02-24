@@ -1,0 +1,4 @@
+Alpha_Centauri
+Alpha_Centaurib
+Alpha_Centauric
+Alpha_Centaurid
