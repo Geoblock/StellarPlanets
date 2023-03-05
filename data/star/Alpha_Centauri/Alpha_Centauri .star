@@ -1,0 +1,4 @@
+Alpha_Centauri_A
+Alpha_Centauri_A_b
+Alpha_Centauri_B
+Alpha_Centauri_B_b

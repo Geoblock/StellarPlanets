@@ -3678,10 +3678,10 @@ object FormAbout: TFormAbout
     OnDblClick = ImageMoonsDblClick
   end
   object MemoDevelopers: TMemo
-    Left = 192
-    Top = 412
+    Left = 8
+    Top = 446
     Width = 185
-    Height = 55
+    Height = 21
     Alignment = taCenter
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
@@ -3690,9 +3690,10 @@ object FormAbout: TFormAbout
     Font.Name = 'Segoe UI'
     Font.Style = [fsBold]
     Lines.Strings = (
-      'Initial developers: '
+      'Developers & Contributors '
       'Pavel Vassiliev '
-      'Lev Koptyaev')
+      'Lev Koptyaev'
+      'Elizaveta Soboleva')
     ParentFont = False
     TabOrder = 1
     Visible = False
@@ -5554,7 +5555,7 @@ object FormAbout: TFormAbout
       Transparent = True
       OnClick = ImageGLSClick
     end
-    object StaticText1: TStaticText
+    object stTitle: TStaticText
       Left = 11
       Top = 11
       Width = 540
@@ -5562,7 +5563,7 @@ object FormAbout: TFormAbout
       Align = alTop
       Alignment = taCenter
       AutoSize = False
-      Caption = 'Star Planets  v.1.0'
+      Caption = 'Stellar Planets  v.1.0'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -24

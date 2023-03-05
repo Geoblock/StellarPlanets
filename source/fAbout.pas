@@ -21,7 +21,7 @@ type
   TFormAbout = class(TForm)
     ImageMoons: TImage;
     Panel1: TPanel;
-    StaticText1: TStaticText;
+    stTitle: TStaticText;
     ImageGLS: TImage;
     MemoDevelopers: TMemo;
     procedure ImageGLSClick(Sender: TObject);
