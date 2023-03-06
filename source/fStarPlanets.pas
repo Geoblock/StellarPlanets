@@ -221,14 +221,16 @@ begin
   CurrentStar := DataDir + '\star\sun\';
   Planet.Material.Texture.Disabled := False;
   Planet.Material.Texture.Image.LoadFromFile('earth.jpg');
+
   Atmosphere.PlanetRadius := Planet.Radius;
-  Atmosphere.AtmosphereRadius := Planet.Radius + 0.1;
+  Atmosphere.AtmosphereRadius := Planet.Radius + 0.05;
   Atmosphere.MoveTo(dcStar);
   Atmosphere.Opacity := cOpacity;
+
   TreeView.Select(TreeView.Items[3]);  // goto to Earth
   miWikiHelp.Caption := TreeView.Selected.Text + ' in ' + 'Wikipedia...';
 
-  TimeMultiplier := Power(1, 3); // faster Power(2, 3);
+  TimeMultiplier := Power(1, 3); // faster - Power(2, 3);
 end;
 
 // LonLatToPos
@@ -346,6 +348,7 @@ begin
 
   if TreeView.Selected.StateIndex = -1 then    // Planet as TGLSphere
   begin
+//  Planet.LoadFromFile(FileName + '.3ds'); // Sphere.3ds for TGLFreeForms
     Planet.Material.Texture.Image.LoadFromFile(FileName + '.jpg');
     Planet.Visible := True;
     Planetoid.Visible := False;
@@ -360,7 +363,7 @@ begin
     Planetoid.Material.Texture.Image.LoadFromFile(FileName + '.jpg');
   end;
 
-  // Cores
+  // Cores of Planets
   if miInnerCore.Checked then
   begin
     if FileExists(FileName  + 'core.jpg') then
@@ -390,7 +393,6 @@ begin
   else
     DirectOpenGL.Visible := False;
 end;
-
 
 // SceneViewerBeforeRender
 //
